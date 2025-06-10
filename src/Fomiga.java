@@ -1,19 +1,22 @@
+import javax.swing.JOptionPane;
+
 public class Fomiga extends Personagem{
 
     @Override
     public void mover() {
-     System.out.println("Anda só pra frente, se perder a rota Game Over");
+        energia -=2;
+     JOptionPane.showMessageDialog(null,"Anda só pra frente, se perder a rota Game Over:"+ energia);
     }
 
-    @Override
-    public int dormir(){
-        return +10;
-    }
      @Override
      public void fazerSom(){
-        System.out.println("rsrsrsrsrs");
+        JOptionPane.showMessageDialog(null,"Som Fomiga:" + "\n" + "rsrsrsrsrs" + "\n" );
      }
-       
-
-
+     public void mostrarEnergia(){
+        JOptionPane.showMessageDialog(null,"Dormindo, Energia atual:" + energia);
+    }
+    public void comer(){
+        energia +=2;
+        JOptionPane.showMessageDialog(null,"Comendo");
+    }
 }

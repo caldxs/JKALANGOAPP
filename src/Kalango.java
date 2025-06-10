@@ -1,17 +1,23 @@
+import javax.swing.JOptionPane;
+
 public class Kalango extends Personagem {
 
     @Override
     public void mover() {
-        System.out.println("Terrestre com velocidade");
+        energia -=3;
+        JOptionPane.showMessageDialog(null,"Terrestre com velocidade:" + energia);
     }
-    @Override
-    public int dormir(){
-        return +10;
-    }
-
     @Override
     public void fazerSom(){
-        System.out.println("zzzzzz");
+        JOptionPane.showMessageDialog(null,"Som Kalango:" + "\n" + "tstststs" + "\n");
     }
+    public void mostrarEnergia(){
+        JOptionPane.showMessageDialog(null,"Dormindo, Energia atual:"+energia);
 
+    }
+    @Override
+    public void comer(){
+        energia +=5;
+        JOptionPane.showMessageDialog(null,"Comendo");
+    }
 }

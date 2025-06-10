@@ -1,18 +1,21 @@
+import javax.swing.JOptionPane;
+
 public class Abelinha extends Personagem{
 
     @Override
     public void mover() {
-      System.out.println("Voanado nos 360 graus.. na doida, Game Oversem polenização..");
+        energia -=1;
+      JOptionPane.showMessageDialog(null,"Voando nos 360 graus:"+ energia);
     }
-    @Override
-    public int dormir(){
-        return +10;
-    }
-
     @Override
     public void fazerSom(){
-        System.out.println("ziziziiziziz");
+        JOptionPane.showMessageDialog(null,"Som Abelinha:" + "\n" + "ziziziizizi" + "\n" );
     }
-
-    
+    public void mostrarEnergia(){
+        JOptionPane.showMessageDialog(null,"Dormindo, Energia atual:" + energia);
+    }
+    public void comer(){
+        energia +=3;
+        JOptionPane.showMessageDialog(null,"Comendo");
+    }
 }
