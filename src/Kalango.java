@@ -5,7 +5,7 @@ public class Kalango extends Personagem {
     @Override
     public void mover() {
         energia -=3;
-        JOptionPane.showMessageDialog(null,"Kalango" + "\n" + "Terrestre com velocidade:" + energia);
+        JOptionPane.showMessageDialog(null,"Kalango" + "\n" + "Terrestre com velocidade:" + energia + "\n" + "Avançou tres casa");
     }
     @Override
     public void fazerSom(){
@@ -18,6 +18,6 @@ public class Kalango extends Personagem {
     @Override
     public void comer(){
         energia +=5;
-        JOptionPane.showMessageDialog(null,"Comendo");
+        JOptionPane.showMessageDialog(null,"Comendo, para recuperar energia");
     }
 }

@@ -5,7 +5,7 @@ public class Abelinha extends Personagem{
     @Override
     public void mover() {
         energia -=1;
-      JOptionPane.showMessageDialog(null,"Abelinha:" + "\n" + "Voando nos 360 graus:"+ energia);
+      JOptionPane.showMessageDialog(null,"Abelinha:" + "\n" + "Voando nos 360 graus: "+ energia + "\n" + "Avançou uma casa");
     }
     @Override
     public void fazerSom(){
@@ -16,6 +16,6 @@ public class Abelinha extends Personagem{
     }
     public void comer(){
         energia +=3;
-        JOptionPane.showMessageDialog(null,"Comendo");
+        JOptionPane.showMessageDialog(null,"Comendo, para recuperar energia");
     }
 }

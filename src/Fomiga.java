@@ -5,7 +5,7 @@ public class Fomiga extends Personagem{
     @Override
     public void mover() {
         energia -=2;
-     JOptionPane.showMessageDialog(null,"Fomiga:" + "\n" +"Anda só pra frente, se perder a rota Game Over:"+ energia);
+     JOptionPane.showMessageDialog(null,"Fomiga:" + "\n" +"Anda só pra frente, se perder a rota Game Over:"+ energia  + "\n" + "Avançou duas casa");
     }
 
      @Override
@@ -17,6 +17,6 @@ public class Fomiga extends Personagem{
     }
     public void comer(){
         energia +=2;
-        JOptionPane.showMessageDialog(null,"Comendo");
+        JOptionPane.showMessageDialog(null,"Comendo, para recuperar energia");
     }
 }
